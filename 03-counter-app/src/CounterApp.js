@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 
 const CounterApp = ( { value } ) => {
 
-    const [counter, setCounter ] = useState( value );
+    const [counter, setCounter ] = useState( value ); // return an array with two values [ value, function ]
     
 
     //handleAdd
     const handleAdd = () => {
         setCounter( counter + 1 );
+       // setCounter( (c) => c + 1);
     }
 
     //handleReset
